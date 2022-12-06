@@ -1,0 +1,122 @@
+/**********************************************
+                Global styles
+**********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --light-c: #ddd;
+  --dark-c: #111;
+  --text-shadow: 5px 2px 2px rgba(0, 0, 0, .8);
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+.container-fluid {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: orange;
+  margin: 4rem 0;
+  text-shadow: var(--text-shadow);
+}
+
+h1 span {
+  background-color: var(--dark-c);
+  color: var(--light-c);
+  padding: 0.2rem 1rem;
+}
+
+label {
+  color: var(--light-c);
+}
+
+#checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 0.25rem 0.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+.btn-light {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-light:hover {
+  background-color: #dcdcdc;
+  border-color: #9a9a9a;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-success:hover {
+  background-color: #136d43;
+  border-color: #0d472c;
+}
+
+.container {
+  margin-top: 3rem;
+  padding: 10px;
+  width: 320px;
+  height: 320px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .8);
+}
+
+.element {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--dark-c);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-c);
+  text-shadow: 0 0 5px #000;
+  border-radius: 5px;
+}
+
+.element:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 100px 5px var(--dark-c);
+}
